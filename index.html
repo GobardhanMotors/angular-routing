@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app='myapp'>
+<head>
+	<title>
+		this ti for routing
+	</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/angular-ui-tree.min.css">
+	 <script src="./js/angular.min.js"></script>
+   <script src="./js/ui-bootstrap-tpls-1.1.2.min.js"></script>
+          <script src="./js/angular-route.js"></script>
+          <script src="./main.js"></script>
+          
+          <script src="./controllers/homeController.js"></script>
+          <script src="./controllers/aboutController.js"></script>
+          <script src="./controllers/contactController.js"></script>
+
+</head>
+<body ng-controller="myRouteController">
+
+<div>
+
+ <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/" ng-bind="titel"></a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <div id="main">
+
+            <!-- angular templating -->
+             <div ng-view></div>
+            <!-- this is where content will be injected -->
+
+        </div>
+
+         <footer>
+     
+     <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+        <ul class="nav nav-pills nav-justified">
+          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+        </ul>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2013 Company Name.</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    </footer>
+    </div>
+</body>
+</html>
