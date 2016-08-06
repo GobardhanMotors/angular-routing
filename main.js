@@ -32,6 +32,16 @@ app.config(function($routeProvider, $locationProvider){
                 templateUrl : 'views/contact.html',
                 controller  : 'contactController'
             })
+            // route for the contact page
+            .when('/terms', {
+                templateUrl : 'views/terms.html',
+                controller  : 'termsController'
+            })
+            // route for the contact page
+            .when('/privacy', {
+                templateUrl : 'views/privacy.html',
+                controller  : 'privacyController'
+            })
             .otherwise({redirectTo: '/'});
             //$locationProvider.html5Mode(true);
 

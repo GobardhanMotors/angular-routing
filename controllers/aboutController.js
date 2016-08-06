@@ -2,7 +2,6 @@
 	   	$scope.message = 'about us page!';
 	   	$scope.isCollapsed = false;
 	   	$scope.isCollapsed1 = function(){
-	   		debugger;
 	   		$scope.isCollapsed = !$scope.isCollapsed ;
 	   	}
 	   	$scope.oneAtATime = true;
