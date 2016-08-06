@@ -21,6 +21,12 @@ app.config(function($routeProvider, $locationProvider){
                 controller  : 'aboutController'
             })
 
+            // route for the Profile page
+            .when('/profile', {
+                templateUrl : 'views/profile.html',
+                controller  : 'profileController'
+            })
+
             // route for the contact page
             .when('/contact', {
                 templateUrl : 'views/contact.html',
